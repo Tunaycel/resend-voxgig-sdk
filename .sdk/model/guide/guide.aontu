@@ -4,5 +4,8 @@
 
 @"./base-guide.aontu"
 
+# Metrics rows live inside the response envelope's data array.
+guide: entity: emails_metric: path: '/emails/metrics': op: list: transform: res: "`body.data`"
+
 
 
