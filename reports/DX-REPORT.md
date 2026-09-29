@@ -50,6 +50,19 @@ Anchoring the rule to `/log/` keeps the intended `.sdk/log/` output ignored whil
 
 Recommendation: update the documentation generator's Markdown dependency upstream. Do not apply the audit's suggested major-version replacement blindly. See the machine-readable audit output for advisory identifiers.
 
+## Finding disposition
+
+| # | Finding | Disposition in this repository | Remaining work |
+|---:|---|---|---|
+| 1 | Windows scaffold cannot launch npm | Mitigated with explicit `npm.cmd` installation and direct Node CLI invocation | Generator launcher should handle Windows upstream |
+| 2 | Native Windows include resolution fails | Mitigated by the scoped build adapter; installed packages remain unmodified | Filesystem semantics should be corrected upstream |
+| 3 | Generated npm scripts assume a Unix shell | Mitigated by portable root scripts used locally and in CI | Generated target scripts should become cross-platform upstream |
+| 4 | Metrics list response maps the wrong envelope | Resolved in the guide with a `body.data` transform; the regression test passes | Generator inference could recognize this envelope automatically |
+| 5 | Ignore rule hides the Log entity fixture | Resolved by anchoring `/log/`; clean Ubuntu and Windows CI pass | Scaffolded ignore rules should be anchored upstream |
+| 6 | Two moderate toolchain advisories | Accepted as a development-tooling residual; the client runtime audit reports zero vulnerabilities | Documentation dependencies should be updated upstream |
+
+CI compiles and tests the checked-in generated client on Ubuntu and Windows. It does not regenerate the client from the OpenAPI definition. Regeneration and scaffold consistency were verified locally with the documented commands; the live check covered one read-only endpoint and did not exercise mutations or production traffic.
+
 ## What worked well
 
 - The model/target separation allowed project ownership and repository URL to be declared without editing generated client code. User-Agent is set in the usage example.
