@@ -1,15 +1,6 @@
 {
-  "NAME": "RESEND",
-  "Name": "Resend",
   "def": "resend.yaml",
   "main": {
-    "api": {
-      "entity": {},
-      "guide": {}
-    },
-    "custom": {
-      "plurals": {}
-    },
     "def": {
       "desc": ""
     },
@@ -4246,7 +4237,7 @@
                   ],
                   "t": {
                     "req": "`reqdata`",
-                    "res": "`body`"
+                    "res": "`body.data`"
                   }
                 }
               ]
@@ -13378,8 +13369,5 @@
     }
   },
   "name": "resend",
-  "name-": "resend",
-  "name_": "resend",
-  "name__orig": "resend",
   "origin": "voxgig-sdk"
 }
