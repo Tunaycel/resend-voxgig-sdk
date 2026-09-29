@@ -1,0 +1,15 @@
+{
+  "name": "resend-voxgig-assessment",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Resend SDK generated with Voxgig, with reproducible assessment evidence.",
+  "license": "MIT",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "generate": "node scripts/run.cjs generate",
+    "build": "node scripts/run.cjs build",
+    "test": "node scripts/run.cjs test",
+    "test:live": "node scripts/live-smoke.cjs",
+    "doctor": "node scripts/run.cjs doctor"
+  }
+}
