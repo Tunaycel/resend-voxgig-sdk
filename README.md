@@ -4,7 +4,7 @@ TypeScript client generated from Resend's official OpenAPI definition with the V
 
 This repository contains the generated client, its reproducible model, tests and a short evaluation of the generator. It is unofficial and is not affiliated with Resend.
 
-**Status:** generation and TypeScript compilation verified on Windows. The final offline suite passed 521 tests, failed 1 and skipped 1. The known failure concerns email metrics response extraction. Live authentication has not yet been verified; this is not a production-ready release.
+**Status:** generation and TypeScript compilation are verified. The final offline suite passed 522 tests, failed 0 and skipped 1 on both Ubuntu and Windows CI. Live authentication has not yet been verified; this is not a production-ready release.
 
 ## Quickstart
 
@@ -58,14 +58,14 @@ Measured on 29 September 2026 with Node 24.12.0 on Windows. Durations are single
 | Generated entity classes / semantic operations | 64 / 100; semantic operations are not a one-to-one endpoint count |
 | Generator pipeline | Passed; 6.7 s on the recorded run |
 | Forced TypeScript build | Passed; 5.4 s on the recorded run |
-| Final generated test suite | 521 passed, 1 failed, 1 skipped; 523 total; 44.6 s |
+| Final generated test suite | 522 passed, 0 failed, 1 skipped; 523 total; Ubuntu and Windows CI passed |
 | Request smoke verification | Passed offline for direct and Domain.list calls |
 | Scaffold consistency (`doctor`) | Passed |
 | Live API validation | Not run; key required |
 | Client runtime dependencies | 0 |
 | Toolchain dependency audit | 2 moderate affected packages; separate from client runtime |
 
-Generation, compilation and test results measure different things. The failing metrics test remains enabled. Neither endpoint counts nor offline passes establish full live API coverage. Details and actionable improvement proposals are in the [generator evaluation](reports/DX-REPORT.md).
+Generation, compilation and test results measure different things. The metrics regression test remains enabled and now passes. Neither endpoint counts nor offline passes establish full live API coverage. Details and actionable improvement proposals are in the [generator evaluation](reports/DX-REPORT.md).
 
 ## Reproduce generation and verification
 
@@ -78,7 +78,7 @@ npm test
 npm run doctor
 ```
 
-`npm test` currently returns a failing exit status because of the documented email-metrics defect. The root commands use Node argument arrays to avoid Windows shell incompatibilities in the generated target's npm scripts. Generation uses a narrowly scoped Windows filesystem adapter; its cause and limitations are documented in the evaluation.
+`npm test` returns a successful exit status; the single skip covers a feature this SDK does not generate. The root commands use Node argument arrays to avoid Windows shell incompatibilities in the generated target's npm scripts. Generation uses a narrowly scoped Windows filesystem adapter; its cause and limitations are documented in the evaluation.
 
 The source definition is pinned to [Resend commit 83c9782](https://github.com/resend/resend-openapi/tree/83c9782f3e14d5c6e5a89c6eb92f872aa0dad64d). The checked-in dependency lockfiles record the resolved toolchain. No SDK runtime code was hand-written as a substitute for Voxgig generation.
 
