@@ -63,5 +63,5 @@ Tunay directed the assessment scope, approved starting implementation, required 
 
 ## Human time
 
-The participant estimates approximately 50 active minutes across two sessions: about 35 minutes before the session limit interrupted the work and about 15 minutes for the final live verification and review. Waiting time and automated tool/CI execution are excluded. This exceeds the stated 30-minute human-work limit by approximately 20 minutes; no compliance claim is made.
+The participant estimates approximately 32 active minutes across two sessions: about 17 minutes in the first session and about 15 minutes for the final live verification and review. Waiting time and automated tool/CI execution are excluded. This exceeds the stated 30-minute human-work limit by approximately 2 minutes; no compliance claim is made.
 
