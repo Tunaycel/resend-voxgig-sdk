@@ -39,6 +39,12 @@ npm run test:live
 
 The live smoke test calls `GET /domains` through the generated client, checks HTTP 200 and the response array, and prints only status, timing and record count. It does not send email. An empty domain list is valid. The script fails if the key is absent; no live pass is claimed until it runs successfully.
 
+### Live verification evidence
+
+The participant-run smoke test authenticated against Resend and completed with HTTP 200. The captured output contains no API key or response payload.
+
+![Successful Resend live smoke test showing GET /domains, HTTP 200 and passed true](docs/assets/live-smoke-result.png)
+
 Keep credentials out of source control. `.env.example` documents the variable name; the script reads the environment and does not automatically load `.env` files.
 
 ## Using the client
