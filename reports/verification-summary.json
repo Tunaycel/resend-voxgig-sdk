@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-09-29T13:32:58.7296230+02:00",
+  "tests": 523,
+  "passed": 521,
+  "failed": 1,
+  "skipped": 1,
+  "durationMs": 44551.0188,
+  "failedCase": "emails_metric.list GET /emails/metrics",
+  "liveApiTest": "not_run",
+  "offlineSmoke": "passed",
+  "publication": "not_started"
+}

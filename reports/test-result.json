@@ -1,0 +1,21 @@
+{
+  "step": "test",
+  "started": "2026-09-29T11:31:43.993Z",
+  "finished": "2026-09-29T11:32:28.593Z",
+  "node": "v24.12.0",
+  "platform": "win32",
+  "measurements": [
+    {
+      "cwd": "ts",
+      "args": [
+        "--enable-source-maps",
+        "--test-concurrency=1",
+        "--test",
+        "dist-test/**/*.test.js"
+      ],
+      "elapsedMs": 44599,
+      "exitCode": 1
+    }
+  ],
+  "exitCode": 1
+}

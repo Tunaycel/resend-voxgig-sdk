@@ -1,0 +1,93 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@voxgig/docgen": {
+      "name": "@voxgig/docgen",
+      "severity": "moderate",
+      "isDirect": true,
+      "via": [
+        "markdown-it"
+      ],
+      "effects": [],
+      "range": ">=0.10.0",
+      "nodes": [
+        "node_modules/@voxgig/docgen"
+      ],
+      "fixAvailable": {
+        "name": "@voxgig/docgen",
+        "version": "0.9.2",
+        "isSemVerMajor": true
+      }
+    },
+    "markdown-it": {
+      "name": "markdown-it",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1113190,
+          "name": "markdown-it",
+          "dependency": "markdown-it",
+          "title": "markdown-it is has a Regular Expression Denial of Service (ReDoS)",
+          "url": "https://github.com/advisories/GHSA-38c4-r59v-3vqw",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": ">=13.0.0 <14.1.1"
+        },
+        {
+          "source": 1120820,
+          "name": "markdown-it",
+          "dependency": "markdown-it",
+          "title": "markdown-it: Quadratic complexity DoS in smartquotes rule via replaceAt string operations",
+          "url": "https://github.com/advisories/GHSA-6v5v-wf23-fmfq",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-400",
+            "CWE-407"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": "<=14.1.1"
+        }
+      ],
+      "effects": [
+        "@voxgig/docgen"
+      ],
+      "range": "<=14.1.1",
+      "nodes": [
+        "node_modules/markdown-it"
+      ],
+      "fixAvailable": {
+        "name": "@voxgig/docgen",
+        "version": "0.9.2",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 2,
+      "high": 0,
+      "critical": 0,
+      "total": 2
+    },
+    "dependencies": {
+      "prod": 1,
+      "dev": 120,
+      "optional": 20,
+      "peer": 19,
+      "peerOptional": 0,
+      "total": 120
+    }
+  }
+}

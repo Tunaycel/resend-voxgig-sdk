@@ -1,0 +1,50 @@
+{
+  "step": "generate",
+  "started": "2026-09-29T11:31:32.079Z",
+  "finished": "2026-09-29T11:31:38.665Z",
+  "node": "v24.12.0",
+  "platform": "win32",
+  "measurements": [
+    {
+      "cwd": ".sdk",
+      "args": [
+        "build/docgen.js"
+      ],
+      "elapsedMs": 634,
+      "exitCode": 0
+    },
+    {
+      "cwd": ".sdk",
+      "args": [
+        "node_modules/typescript/bin/tsc",
+        "--build",
+        "src"
+      ],
+      "elapsedMs": 84,
+      "exitCode": 0
+    },
+    {
+      "cwd": ".sdk",
+      "args": [
+        "--require",
+        "./build/windows-native-fs.cjs",
+        "node_modules/@voxgig/model/bin/voxgig-model",
+        "model/sdk.aontu"
+      ],
+      "elapsedMs": 4890,
+      "exitCode": 0
+    },
+    {
+      "cwd": ".sdk",
+      "args": [
+        "--require",
+        "./build/windows-native-fs.cjs",
+        "node_modules/@voxgig/model/bin/voxgig-model",
+        "test/test.aontu"
+      ],
+      "elapsedMs": 977,
+      "exitCode": 0
+    }
+  ],
+  "exitCode": 0
+}

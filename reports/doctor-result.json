@@ -1,0 +1,21 @@
+{
+  "step": "doctor",
+  "started": "2026-09-29T11:26:39.187Z",
+  "finished": "2026-09-29T11:26:41.454Z",
+  "node": "v24.12.0",
+  "platform": "win32",
+  "measurements": [
+    {
+      "cwd": ".sdk",
+      "args": [
+        "--require",
+        "./build/windows-native-fs.cjs",
+        "node_modules/@voxgig/sdkgen/bin/voxgig-sdkgen",
+        "doctor"
+      ],
+      "elapsedMs": 2265,
+      "exitCode": 0
+    }
+  ],
+  "exitCode": 0
+}
