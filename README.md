@@ -4,7 +4,7 @@ TypeScript client generated from Resend's official OpenAPI definition with the V
 
 This repository contains the generated client, its reproducible model, tests and a short evaluation of the generator. It is unofficial and is not affiliated with Resend.
 
-**Status:** generation and TypeScript compilation are verified. The final offline suite passed 522 tests, failed 0 and skipped 1 on both Ubuntu and Windows CI. Live authentication has not yet been verified; this is not a production-ready release.
+**Status:** generation and TypeScript compilation are verified. The final offline suite passed 522 tests, failed 0 and skipped 1 on both Ubuntu and Windows CI. A participant-run live smoke test authenticated successfully against Resend; this is not a production-ready release.
 
 ## Quickstart
 
@@ -61,7 +61,7 @@ Measured on 29 September 2026 with Node 24.12.0 on Windows. Durations are single
 | Final generated test suite | 522 passed, 0 failed, 1 skipped; 523 total; Ubuntu and Windows CI passed |
 | Request smoke verification | Passed offline for direct and Domain.list calls |
 | Scaffold consistency (`doctor`) | Passed |
-| Live API validation | Not run; key required |
+| Live API validation | Passed `GET /domains`: HTTP 200, 246 ms, 0 domains |
 | Client runtime dependencies | 0 |
 | Toolchain dependency audit | 2 moderate affected packages; separate from client runtime |
 

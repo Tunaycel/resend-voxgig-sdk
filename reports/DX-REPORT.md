@@ -4,7 +4,7 @@
 
 ## Scope and outcome
 
-Generated a TypeScript client from the official Resend OpenAPI definition using `@voxgig/create-sdkgen` 0.29.2, `@voxgig/sdkgen` 4.31.0 and `@voxgig/apidef` 8.18.0. The model produces 64 entity classes. The final generated suite reported 522 passed, 0 failed and 1 skipped out of 523 tests on both Ubuntu and Windows CI. A real-key test has not run, so this assessment artifact is not a production-readiness claim.
+Generated a TypeScript client from the official Resend OpenAPI definition using `@voxgig/create-sdkgen` 0.29.2, `@voxgig/sdkgen` 4.31.0 and `@voxgig/apidef` 8.18.0. The model produces 64 entity classes. The final generated suite reported 522 passed, 0 failed and 1 skipped out of 523 tests on both Ubuntu and Windows CI. A participant-run, real-key `GET /domains` smoke test returned HTTP 200 in 246 ms with a valid empty domain list. This limited read-only check is not a production-readiness claim.
 
 Resend was absent from a scan of 802 public Voxgig repositories and all their root READMEs, cross-checked against the website's 637-entry JSON/CSV catalogue. Generic resend-verification operations in other APIs were inspected and excluded. The inventories differ, so the website alone is insufficient evidence.
 
@@ -59,7 +59,7 @@ Recommendation: update the documentation generator's Markdown dependency upstrea
 
 ## Ownership and verification
 
-Tunay directed the assessment scope, approved starting implementation, required catalogue verification and professional documentation, and managed progress. Codex researched sources, ran commands, implemented the build adapter and supporting scripts, and drafted documentation. The SDK source was produced by Voxgig's generator. Automated checks are identified as such; participant-performed manual verification is not yet recorded.
+Tunay directed the assessment scope, approved starting implementation, required catalogue verification and professional documentation, and managed progress. Codex researched sources, ran commands, implemented the build adapter and supporting scripts, and drafted documentation. The SDK source was produced by Voxgig's generator. Automated checks are identified as such. Tunay created a restricted-purpose Resend key, ran the live smoke command locally and supplied its non-secret result; the key was not recorded in the repository.
 
 ## Human time
 
@@ -67,6 +67,5 @@ The participant's cumulative active minutes have not been supplied. Do not claim
 
 ## Outstanding
 
-- Real API key, live read-only smoke test and participant review.
 - Confirmation of cumulative human effort.
 
