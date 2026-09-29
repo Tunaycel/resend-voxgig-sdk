@@ -63,9 +63,5 @@ Tunay directed the assessment scope, approved starting implementation, required 
 
 ## Human time
 
-The participant's cumulative active minutes have not been supplied. Do not claim compliance with the 30-minute human-work limit until that total includes earlier assessment preparation and review. Tool wall-clock durations are recorded separately and are not a substitute for human time. Stop human assessment work at the limit and report unfinished items.
-
-## Outstanding
-
-- Confirmation of cumulative human effort.
+The participant estimates approximately 50 active minutes across two sessions: about 35 minutes before the session limit interrupted the work and about 15 minutes for the final live verification and review. Waiting time and automated tool/CI execution are excluded. This exceeds the stated 30-minute human-work limit by approximately 20 minutes; no compliance claim is made.
 
