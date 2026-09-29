@@ -59,7 +59,7 @@ Recommendation: update the documentation generator's Markdown dependency upstrea
 
 ## Ownership and verification
 
-Tunay directed the assessment scope, approved starting implementation, required catalogue verification and professional documentation, and managed progress. Codex researched sources, ran commands, implemented the build adapter and supporting scripts, and drafted documentation. The SDK source was produced by Voxgig's generator. Automated checks are identified as such. Tunay created a restricted-purpose Resend key, ran the live smoke command locally and supplied its non-secret result; the key was not recorded in the repository.
+Tunay directed the assessment scope, approved starting implementation, required catalogue verification and professional documentation, and managed progress. Codex researched sources, ran commands, implemented the build adapter and supporting scripts, and drafted documentation. The SDK source was produced by Voxgig's generator. Automated checks are identified as such. Tunay created a temporary Resend key, ran the live smoke command locally and supplied its non-secret result; the key was not recorded in the repository.
 
 ## Human time
 

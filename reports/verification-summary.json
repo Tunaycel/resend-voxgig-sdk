@@ -1,12 +1,26 @@
 {
-  "checkedAt": "2026-09-29T13:32:58.7296230+02:00",
+  "checkedAt": "2026-09-29T22:46:07+02:00",
   "tests": 523,
-  "passed": 521,
-  "failed": 1,
+  "passed": 522,
+  "failed": 0,
   "skipped": 1,
-  "durationMs": 44551.0188,
-  "failedCase": "emails_metric.list GET /emails/metrics",
-  "liveApiTest": "not_run",
+  "durationMs": 56607.4741,
+  "failedCase": null,
+  "liveApiTest": {
+    "status": "passed",
+    "endpoint": "GET /domains",
+    "httpStatus": 200,
+    "elapsedMs": 246,
+    "domainCount": 0
+  },
   "offlineSmoke": "passed",
-  "publication": "not_started"
+  "ci": {
+    "ubuntu": "passed",
+    "windows": "passed"
+  },
+  "publication": {
+    "status": "public",
+    "url": "https://github.com/Tunaycel/resend-voxgig-sdk",
+    "license": "MIT"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "step": "test",
-  "started": "2026-09-29T11:31:43.993Z",
-  "finished": "2026-09-29T11:32:28.593Z",
+  "started": "2026-09-29T20:45:10.763Z",
+  "finished": "2026-09-29T20:46:07.418Z",
   "node": "v24.12.0",
   "platform": "win32",
   "measurements": [
@@ -13,9 +13,9 @@
         "--test",
         "dist-test/**/*.test.js"
       ],
-      "elapsedMs": 44599,
-      "exitCode": 1
+      "elapsedMs": 56654,
+      "exitCode": 0
     }
   ],
-  "exitCode": 1
+  "exitCode": 0
 }

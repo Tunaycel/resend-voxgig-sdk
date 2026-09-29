@@ -63,7 +63,7 @@ Measured on 29 September 2026 with Node 24.12.0 on Windows. Durations are single
 | Input paths / HTTP operations | 72 / 113; excludes inbound webhook definitions |
 | Generated entity classes / semantic operations | 64 / 100; semantic operations are not a one-to-one endpoint count |
 | Generator pipeline | Passed; 6.7 s on the recorded run |
-| Forced TypeScript build | Passed; 5.4 s on the recorded run |
+| Forced TypeScript build | Passed; 4.2 s on the recorded run |
 | Final generated test suite | 522 passed, 0 failed, 1 skipped; 523 total; Ubuntu and Windows CI passed |
 | Request smoke verification | Passed offline for direct and Domain.list calls |
 | Scaffold consistency (`doctor`) | Passed |
